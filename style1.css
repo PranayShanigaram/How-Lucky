@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px auto;
+    padding: 15px;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top right, rgba(48, 23, 187, 0.767), rgb(30, 241, 196));
+}
+
+main{
+    border: 5px solid black;
+    box-shadow: 5px 5px 15px 5px rgb(27, 27, 26);
+    border-radius: 25px;
+    position: relative;
+    width: 95vh;
+    height: 95vh;
+    padding: 5px;
+    padding: 25px;
+}
+
+section{
+    position: absolute;
+    padding: 10px;
+    left: 50%;
+    width: 49%;
+    height: 50%;
+    top: 5%;
+
+}
+
+img{
+    border: 15px solid black;
+    border-radius: 15%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 15%;
+    left: 10%;
+}
+
+label{
+    position: absolute;
+    font-weight: 800;
+    font-size: 25px;
+    font-family: cursive;
+    top: 15%;
+    left: 37%;
+
+}
+
+.btn{
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  width: 10rem;
+  height: 3.5rem;
+  color: 5px solid #0a0a0a;
+  padding: 5px 15px;
+  border: 3px solid rgb(236, 36, 29);
+  background-color: rgba(238, 45, 45, 0.938);
+  box-shadow: 2px 2px ivory;
+  border-radius: 150px;
+  cursor: pointer;
+}
+
+.btn:link,
+.btn:visited{
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 150px;
+    color: rgb(12, 12, 12);
+    transition: background-color 0.5s,border 0.5s,color 0.5s;
+
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d1d2d6f3;
+
+}
+
+
+.btn-submit{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    margin: 0 auto;
+    color: #121213;
+    background-color: rgb(3, 99, 241);
+    border:  solid #d4f7da;
+    border-radius: 50%;
+    transition: all 0.3s;
+    width: 5em;
+    height: 2em;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.404), inset 0 0 0 rgba(0,0,0,0.1);
+    text-align: center;
+    top: 45%;
+    left: 42%;
+
+}
+
+.btn-roll{
+    top: 15%;
+    left: 40%;
+}
+
+.btn-playagain{
+    top: 35%;
+    left: 12%;
+    width: 15rem;
+    height: 3.5rem;
+}
+
+.btn-reset{
+    position: relative;
+    width: 11rem;
+    top: 60%;
+    left: 40%;
+
+}
+
+.chance-box{
+    box-sizing: content-box;
+    font-size: 100px;
+    position: absolute;
+    overflow: hidden;
+    border: 3px solid rgb(17, 16, 16);
+    font-size: 105px;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 15%;
+    width: 145px;
+    height: 115px;
+    top: 13%;
+    left: 75%;
+    border-radius: 10%;
+    box-shadow: 5px 5px black;
+}
+
+
+#playername{
+    position:absolute;
+    height:30px;
+    font-size:17pt;
+    border: 3px solid;
+    background-color: rgba(10, 6, 240, 0.39);
+    color: white;
+    top: 30%;
+    left: 35%;
+}
+
+::placeholder { 
+    color: rgb(20, 20, 20);
+    font-size: 20px;
+    opacity: 0.7; 
+  }
+
+.wrapper{
+    display: grid;
+    border: black;
+    padding: 5px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-auto-flow: column;
+}
+
+.box{
+    border: 2px solid black;
+    width: 120px;
+    height: 120px;
+    border-radius: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(243, 237, 237);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px rgba(19, 18, 18, 0.603);
+}
+
+.box:hover,
+.box:active{
+    background-color: rgba(255, 235, 205, 0.637);
+}
+
+.chance-text{
+    position: absolute;
+    font-weight: 900;
+    font-size: 25px;
+    top: 55%;
+    left: 75%;
+}
+
+.score-box{
+    border: 5px solid rgb(245, 243, 242);
+    box-shadow: 5px 5px white;
+    padding: 10px;
+    border-radius: 5%;
+    height: 45%;
+    top: 53%;
+}
+
+.message-box{
+    position: absolute;
+    overflow: hidden;
+    border: 3px solid rgb(17, 16, 16);
+    box-shadow: 5px 5px rgb(12, 12, 12);
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15%;
+    width: 45%;
+    height: 15%;
+    top: 37%;
+    left: 52%;
+}
+
+.winner-message{
+    position: absolute;
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 5px 5px black;
+    color: rgb(247, 6, 6);
+    top: 45%;
+    left: 27%;
+    z-index: 3;
+}
+
+.overlay{
+    position: absolute;
+    width: 250%;
+    height: 150%;
+    background-color: rgba(130, 168, 204, 0.904);
+    backdrop-filter: blur(6px);
+    z-index: 2;
+}
+
+.your-score{
+    position: absolute;
+    overflow: hidden;
+    display: inline;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 80px;
+    font-family :'Times New Roman', Times, serif;
+    border: 5px solid;
+    width: 170px;
+    height: 145px;
+    top: 22%;
+    left: 8%;
+    border-radius: 10%;
+    box-shadow: 5px 5px black;
+
+}
+
+.high-score{
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    border: 5px solid;
+    display: inline;
+    width: 170px;
+    padding-top: 20px;
+    font-size: 80px;
+    font-family :'Times New Roman', Times, serif;
+    height: 145px;
+    top: 22%;
+    left: 73%;
+    border-radius: 10%;
+    box-shadow: 5px 5px black;
+
+}
+
+.text{
+    position: absolute;
+    font-weight: 900;
+    font-size: 20px;
+    top: 55%;
+    left: 75%;
+}
+
+#num1{
+    top: 75%;
+    left: 10%;
+}
+
+#num2{
+    top: 75%;
+    left: 73%;
+}
+
+.hidden{
+    display: none;
+  }
